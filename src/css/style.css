@@ -3,7 +3,7 @@
 .container-body {
   background-color: #000;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   font-family: Lato, sans-serif;
 }
 
@@ -77,6 +77,31 @@
   border-radius: 5px;
   padding: 16px 0;
   cursor: pointer;
+}
+
+.lista-itens {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  width: 100%;
+  padding-top: 32px;
+}
+
+.itens {
+  border-radius: 5px;
+  height: 66px;
+  width: 66px;
+  display: flex;
+  justify-content: center;
+  border: 1px solid transparent;
+  background: linear-gradient(to right, rgb(15, 18, 22), rgb(15, 18, 22))
+      padding-box padding-box,
+    linear-gradient(to right, rgb(166, 247, 80), rgb(49, 77, 166)) border-box
+      border-box;
+}
+
+.itens img {
+  width: 50%;
 }
 
 @media (min-width: 320px) {
