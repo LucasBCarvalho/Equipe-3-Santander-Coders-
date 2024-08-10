@@ -41,25 +41,42 @@
   flex-direction: column;
   align-items: center;
   gap: 30px;
-
-  padding-top: 35px;
+  padding-top: 40px;
 }
 
 .container-form-input {
   width: 100%;
-  padding: 18px 20px;
+  padding: 10px 20px;
   border-radius: 5px;
   background-color: #181c23;
   color: #e1e1e1;
   border: none;
   outline: none;
   font-size: 1rem;
+  line-height: 2;
 }
 
 .container-form-ancora {
   color: #a6f750;
   text-decoration: none;
   align-self: flex-start;
+  cursor: pointer;
+}
+
+.container-form-ancora:hover {
+  color: #bff981;
+  transition: 0.3s;
+}
+
+.botao {
+  background-color: #a6f750;
+  text-decoration: none;
+  color: #0f1216;
+  width: 100%;
+  text-align: center;
+  border-radius: 5px;
+  padding: 16px 0;
+  cursor: pointer;
 }
 
 @media (min-width: 320px) {
