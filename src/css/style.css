@@ -23,15 +23,12 @@
   width: 100%;
 }
 
-.logo {
-  margin-bottom: 1rem;
-}
-
 .title {
   font-family: "Ubuntu", sans-serif;
   font-weight: 400;
   font-size: 1.5rem;
   color: #efefef;
+  margin-top: 16px;
 }
 
 .separacao {
