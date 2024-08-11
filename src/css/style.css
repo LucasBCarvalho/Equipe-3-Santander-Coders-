@@ -11,7 +11,7 @@
 
 .container-main {
   display: flex;
-  height: calc(100vh + 12vh);
+  height: calc(100vh + 25vh);
 
   justify-content: center;
   align-items: center;
