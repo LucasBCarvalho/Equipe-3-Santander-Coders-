@@ -8,7 +8,7 @@ body {
   background: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95)) center
       center / cover,
     url(/src/imgs/login-background.png) no-repeat top / cover;
-  height: 100vh;
+  height: 120vh;
 }
 
 ::-webkit-scrollbar {
