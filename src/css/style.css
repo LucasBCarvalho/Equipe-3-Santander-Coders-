@@ -1,12 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
-html {
-	height: 100vh;
-}
-
 .container-body {
 	width: 100%;
-	height: 100%;
+	height: 100vh;
 	font-family: "Lato", sans-serif;
 	background: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95)) center
 			center / cover,
@@ -136,6 +132,12 @@ html {
 	color: #e1e1e1;
 }
 
+@media (min-width: 768px) {
+	.container-main {
+		padding: 16px 96px;
+	}
+}
+
 @media (min-width: 1024px) {
 	.container-body {
 		background: url(/src/imgs/login-background.png) right top no-repeat;
@@ -146,5 +148,27 @@ html {
 		background: #0f1216;
 		width: 44%;
 		padding: 16px 96px;
+	}
+}
+
+@media (min-width: 1560px) {
+	.container-body {
+		background: url(/src/imgs/login-background.png);
+		object-fit: contain;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
+	.container-main {
+		width: 30%;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.container-form {
+		width: 80%;
+		align-items: center;
+		justify-content: center;
 	}
 }
