@@ -1,217 +1,150 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
-.container-body {
-  width: 100%;
-  height: 100%;
-  font-family: Lato, sans-serif;
-  background: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95)) center
-      center / cover,
-    url("https://ada-sso-production.s3.sa-east-1.amazonaws.com/public/theme/login-background.png")
-      center center / cover;
+html {
+	height: 100vh;
 }
 
-.logo {
-  margin: 40px 0 16px 0;
+.container-body {
+	width: 100%;
+	height: 100%;
+	font-family: "Lato", sans-serif;
+	background: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95)) center
+			center / cover,
+		url(/src/imgs/login-background.png) no-repeat top / cover;
 }
 
 .container-main {
-  padding: 16px;
-  height: 100vh;
+	display: flex;
+	height: 100%;
+	padding: 16px;
 }
 
 .container-login {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+	width: 100%;
+}
+
+.logo {
+	margin-bottom: 1rem;
 }
 
 .title {
-  font-weight: 400;
-  font-size: 1.5rem;
-  color: #e1e1e1;
-  font-family: "Ubuntu", sans-serif;
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 400;
+	font-size: 1.5rem;
+	color: #efefef;
 }
 
 .separacao {
-  width: 72%;
-  margin: 40px auto 0 auto;
-  border: none;
-  height: 1px;
-  background-color: #383c44;
-  display: flex;
+	display: flex;
+	height: 1px;
+	background: #383c44;
+	margin: 2.5rem;
 }
 
 .container-form {
-  padding: 0;
-  margin: 0;
-}
-
-.formulario {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 30px;
-  padding-top: 40px;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	/* width: 100%; */
 }
 
 .container-form-input {
-  width: 100%;
-  padding: 10px 20px;
-  border-radius: 5px;
-  background-color: #181c23;
-  font-family: Lato, sans-serif;
-  color: #e1e1e1;
-  border: none;
-  outline: none;
-  font-size: 1rem;
-  line-height: 2;
-}
-
-.container-form-input::placeholder {
-  font-family: Lato, sans-serif;
+	/* width: 100%; */
+	padding: 15px 20px;
+	font-family: "Lato", sans-serif;
+	font-size: 1rem;
+	color: #e1e1e1;
+	background: #181c23;
+	border-radius: 5px;
+	outline: none;
+	border-color: transparent;
 }
 
 .container-form-ancora {
-  align-self: flex-start;
-  cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
 }
 
 .estilo-ancora {
-  color: #a6f750;
-  text-decoration: none;
+	font-size: 1rem;
+	color: #a6f750;
 }
 
-.container-form-ancora:hover {
-  color: #bff981;
-  transition: 0.3s;
+.link:hover {
+	color: #bff981;
+	transition: color 0.1s ease-out;
 }
 
-.botao {
-  background-color: #a6f750;
-  text-decoration: none;
-  color: #0f1216;
-  width: 100%;
-  text-align: center;
-  border-radius: 5px;
-  padding: 16px 0;
-  cursor: pointer;
+.btn {
+	font-weight: 400;
+	font-size: 1rem;
+	color: rgb(15, 18, 22);
+	line-height: 3.25rem;
+	background-color: #a6f750;
+	border-radius: 5px;
+	transition: opacity 0.3s;
+}
+
+.btn:hover {
+	opacity: 0.8;
 }
 
 .lista-itens {
-  display: flex;
-  justify-content: center;
-  gap: 32px;
-  width: 100%;
-  padding-top: 32px;
+	display: flex;
+	justify-content: center;
+	gap: 32px;
+	width: 100%;
+	margin-bottom: 2.5rem;
 }
 
 .itens {
-  border-radius: 5px;
-  height: 66px;
-  width: 66px;
-  display: flex;
-  justify-content: center;
-  border: 1px solid transparent;
-  background: linear-gradient(to right, rgb(15, 18, 22), rgb(15, 18, 22))
-      padding-box padding-box,
-    linear-gradient(to right, rgb(166, 247, 80), rgb(49, 77, 166)) border-box
-      border-box;
-  transition: 0.3s ease-in;
+	border-radius: 5px;
+	height: 66px;
+	width: 66px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid transparent;
+	background: linear-gradient(to right, rgb(15, 18, 22), rgb(15, 18, 22))
+			padding-box padding-box,
+		linear-gradient(to right, rgb(166, 247, 80), rgb(49, 77, 166)) border-box
+			border-box;
+	cursor: pointer;
+	transition: 0.3s ease-in;
 }
 
 .itens:hover {
-  background: linear-gradient(to right, rgb(166, 247, 80), rgb(49, 77, 166))
-    border-box border-box;
-
-  transition: 0.3s ease-in-out;
-  cursor: pointer;
+	background: linear-gradient(to right, rgb(166, 247, 80), rgb(49, 77, 166))
+		border-box border-box;
+	transition: 0.3s ease-in-out;
 }
 
-.itens img {
-  width: 50%;
+.itens a img {
+	width: 32px;
+	height: 32px;
 }
 
-.cadastro {
-  display: flex;
-  flex-direction: column;
-
-  align-items: center;
-
-  padding-top: 32px;
-
-  color: #efefef;
+.container-cadastro {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
-.imagem-login-background {
-  display: none;
-}
-
-@media (min-width: 375px) {
-  .separacao {
-    width: 77%;
-  }
-}
-
-@media (min-width: 425px) {
-  .separacao {
-    width: 80%;
-  }
-}
-
-@media (min-width: 768px) {
-  .container-main {
-    padding: 16px 96px;
-  }
-
-  .separacao {
-    width: 87%;
-  }
+.container-cadastro p {
+	color: #e1e1e1;
 }
 
 @media (min-width: 1024px) {
-  .container-body {
-    height: 100%;
-    background: #0f1216;
-    display: flex;
-  }
+	.container-body {
+		background: url(/src/imgs/login-background.png) right top no-repeat;
+		object-fit: cover;
+	}
 
-  .container-main {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .cabecalho {
-    display: flex;
-    flex-direction: column;
-    gap: 19px;
-  }
-
-  .logo {
-    width: 38%;
-    margin: 0;
-  }
-  .container-form {
-    width: calc(100% + 60%);
-  }
-  .container-form-input {
-    display: flex;
-  }
-
-  .imagem-login-background {
-    width: 50%;
-    display: flex;
-    position: relative;
-  }
-  .login-background {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    left: 39%;
-  }
-
-  .separacao {
-    width: 80%;
-  }
+	.container-main {
+		background: #0f1216;
+		width: 44%;
+		padding: 16px 96px;
+	}
 }
