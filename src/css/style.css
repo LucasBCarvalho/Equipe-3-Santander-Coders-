@@ -2,7 +2,7 @@
 
 .container-body {
   width: 100%;
-  height: 150vh;
+  height: 100vh;
   font-family: "Lato", sans-serif;
   background: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95)) center
       center / cover,
@@ -11,7 +11,8 @@
 
 .container-main {
   display: flex;
-  height: calc(100vh + 25vh);
+
+  height: 100%;
 
   justify-content: center;
   align-items: center;
@@ -20,7 +21,6 @@
 
 .container-login {
   width: 100%;
-  margin-top: 80px;
 }
 
 .logo {
@@ -131,6 +131,13 @@
 .container-cadastro p {
   color: #e1e1e1;
 }
+
+@media (max-width: 320px) {
+  .container-login {
+    margin-top: 80px;
+  }
+}
+
 @media (min-width: 640px) {
   .container-main {
     padding: 16px 60px;
