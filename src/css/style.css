@@ -1,13 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
 .container-body {
-	width: 100%;
-	height: 100vh;
-	font-family: Lato, sans-serif;
-	background: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95)) center
-			center / cover,
-		url("https://ada-sso-production.s3.sa-east-1.amazonaws.com/public/theme/login-background.png")
-			center center / cover;
+  width: 100%;
+  height: 100vh;
+  font-family: Lato, sans-serif;
+  background: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95)) center center / cover,
+    url("https://ada-sso-production.s3.sa-east-1.amazonaws.com/public/theme/login-background.png") center center / cover;
 }
 
 .logo {
@@ -107,22 +105,19 @@
 }
 
 .itens {
-	border-radius: 5px;
-	height: 66px;
-	width: 66px;
-	display: flex;
-	justify-content: center;
-	border: 1px solid transparent;
-	background: linear-gradient(to right, rgb(15, 18, 22), rgb(15, 18, 22))
-			padding-box padding-box,
-		linear-gradient(to right, rgb(166, 247, 80), rgb(49, 77, 166)) border-box
-			border-box;
-	transition: 0.3s ease-in;
+  border-radius: 5px;
+  height: 66px;
+  width: 66px;
+  display: flex;
+  justify-content: center;
+  border: 1px solid transparent;
+  background: linear-gradient(to right, rgb(15, 18, 22), rgb(15, 18, 22)) padding-box padding-box,
+    linear-gradient(to right, rgb(166, 247, 80), rgb(49, 77, 166)) border-box border-box;
+  transition: 0.3s ease-in;
 }
 
 .itens:hover {
-	background: linear-gradient(to right, rgb(166, 247, 80), rgb(49, 77, 166))
-		border-box border-box;
+  background: linear-gradient(to right, rgb(166, 247, 80), rgb(49, 77, 166)) border-box border-box;
 
 	transition: 0.3s ease-in-out;
 	cursor: pointer;
@@ -166,23 +161,5 @@
 
 	.separacao {
 		width: 87%;
-	}
-}
-
-@media (min-width: 1024px) {
-	.container-body {
-		height: 100%;
-		background: #0f1216;
-	}
-
-	.container-main {
-		display: flex;
-	}
-
-	.login-background {
-		display: block;
-		height: 100%;
-		width: 30%;
-		object-fit: cover;
 	}
 }
