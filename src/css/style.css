@@ -2,7 +2,6 @@
 
 .container-body {
   width: 100%;
-  height: 100%;
   font-family: "Lato", sans-serif;
   background: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95)) center
       center / cover,
@@ -14,7 +13,7 @@
   justify-content: center;
   align-items: center;
 
-  height: 100%;
+  height: 100vh;
   padding: 16px;
 }
 
@@ -44,11 +43,9 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
-  /* width: 100%; */
 }
 
 .container-form-input {
-  /* width: 100%; */
   padding: 15px 20px;
   font-family: "Lato", sans-serif;
   font-size: 1rem;
@@ -133,7 +130,7 @@
   color: #e1e1e1;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 765px) {
   .container-main {
     padding: 16px 96px;
   }
