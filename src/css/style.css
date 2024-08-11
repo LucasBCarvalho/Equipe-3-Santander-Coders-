@@ -2,7 +2,7 @@
 
 .container-body {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   font-family: Lato, sans-serif;
   background: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95)) center
       center / cover,
@@ -143,9 +143,9 @@
   color: #efefef;
 }
 
-/* .login-background {
-	display: none;
-} */
+.imagem-login-background {
+  display: none;
+}
 
 @media (min-width: 375px) {
   .separacao {
@@ -173,9 +173,45 @@
   .container-body {
     height: 100%;
     background: #0f1216;
+    display: flex;
   }
 
+  .container-main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cabecalho {
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+  }
+
+  .logo {
+    width: 38%;
+    margin: 0;
+  }
+  .container-form {
+    width: calc(100% + 60%);
+  }
   .container-form-input {
     display: flex;
+  }
+
+  .imagem-login-background {
+    width: 50%;
+    display: flex;
+    position: relative;
+  }
+  .login-background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    left: 39%;
+  }
+
+  .separacao {
+    width: 80%;
   }
 }
