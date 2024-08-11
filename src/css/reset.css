@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95)) center
+    center / cover;
+}
+
 ::-webkit-scrollbar {
   width: 10px;
   height: 10px;
