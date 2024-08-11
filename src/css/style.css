@@ -1,154 +1,188 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
 .container-body {
-  width: 100%;
-  height: 100vh;
-  font-family: Lato, sans-serif;
-  background: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95)) center center / cover,
-    url("https://ada-sso-production.s3.sa-east-1.amazonaws.com/public/theme/login-background.png") center center / cover;
+	width: 100%;
+	height: 100vh;
+	font-family: Lato, sans-serif;
+	background: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95)) center
+			center / cover,
+		url("https://ada-sso-production.s3.sa-east-1.amazonaws.com/public/theme/login-background.png")
+			center center / cover;
 }
 
 .logo {
-  margin: 40px 0 16px 0;
+	margin: 40px 0 16px 0;
 }
 
 .container-main {
-  padding: 16px;
-  height: 100%;
+	padding: 16px;
+	height: 100%;
+}
+
+.container-login {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 .title {
-  font-weight: 400;
-  font-size: 1.5rem;
-  color: #e1e1e1;
-  font-family: "Ubuntu", sans-serif;
+	font-weight: 400;
+	font-size: 1.5rem;
+	color: #e1e1e1;
+	font-family: "Ubuntu", sans-serif;
 }
 
 .separacao {
-  width: 72%;
-  margin: 40px auto 0 auto;
-  border: none;
-  height: 1px;
-  background-color: #383c44;
-  display: flex;
+	width: 72%;
+	margin: 40px auto 0 auto;
+	border: none;
+	height: 1px;
+	background-color: #383c44;
+	display: flex;
 }
 
 .container-form {
-  padding: 0;
-  margin: 0;
+	padding: 0;
+	margin: 0;
 }
 
 .formulario {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 30px;
-  padding-top: 40px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 30px;
+	padding-top: 40px;
 }
 
 .container-form-input {
-  width: 100%;
-  padding: 10px 20px;
-  border-radius: 5px;
-  background-color: #181c23;
-  font-family: Lato, sans-serif;
-  color: #e1e1e1;
-  border: none;
-  outline: none;
-  font-size: 1rem;
-  line-height: 2;
+	width: 100%;
+	padding: 10px 20px;
+	border-radius: 5px;
+	background-color: #181c23;
+	font-family: Lato, sans-serif;
+	color: #e1e1e1;
+	border: none;
+	outline: none;
+	font-size: 1rem;
+	line-height: 2;
 }
 
 .container-form-input::placeholder {
-  font-family: Lato, sans-serif;
+	font-family: Lato, sans-serif;
 }
 
 .container-form-ancora {
-  align-self: flex-start;
-  cursor: pointer;
+	align-self: flex-start;
+	cursor: pointer;
 }
 
 .estilo-ancora {
-  color: #a6f750;
-  text-decoration: none;
+	color: #a6f750;
+	text-decoration: none;
 }
 
 .container-form-ancora:hover {
-  color: #bff981;
-  transition: 0.3s;
+	color: #bff981;
+	transition: 0.3s;
 }
 
 .botao {
-  background-color: #a6f750;
-  text-decoration: none;
-  color: #0f1216;
-  width: 100%;
-  text-align: center;
-  border-radius: 5px;
-  padding: 16px 0;
-  cursor: pointer;
+	background-color: #a6f750;
+	text-decoration: none;
+	color: #0f1216;
+	width: 100%;
+	text-align: center;
+	border-radius: 5px;
+	padding: 16px 0;
+	cursor: pointer;
 }
 
 .lista-itens {
-  display: flex;
-  justify-content: center;
-  gap: 32px;
-  width: 100%;
-  padding-top: 32px;
+	display: flex;
+	justify-content: center;
+	gap: 32px;
+	width: 100%;
+	padding-top: 32px;
 }
 
 .itens {
-  border-radius: 5px;
-  height: 66px;
-  width: 66px;
-  display: flex;
-  justify-content: center;
-  border: 1px solid transparent;
-  background: linear-gradient(to right, rgb(15, 18, 22), rgb(15, 18, 22)) padding-box padding-box,
-    linear-gradient(to right, rgb(166, 247, 80), rgb(49, 77, 166)) border-box border-box;
-  transition: 0.3s ease-in;
+	border-radius: 5px;
+	height: 66px;
+	width: 66px;
+	display: flex;
+	justify-content: center;
+	border: 1px solid transparent;
+	background: linear-gradient(to right, rgb(15, 18, 22), rgb(15, 18, 22))
+			padding-box padding-box,
+		linear-gradient(to right, rgb(166, 247, 80), rgb(49, 77, 166)) border-box
+			border-box;
+	transition: 0.3s ease-in;
 }
 
 .itens:hover {
-  background: linear-gradient(to right, rgb(166, 247, 80), rgb(49, 77, 166)) border-box border-box;
+	background: linear-gradient(to right, rgb(166, 247, 80), rgb(49, 77, 166))
+		border-box border-box;
 
-  transition: 0.3s ease-in-out;
-  cursor: pointer;
+	transition: 0.3s ease-in-out;
+	cursor: pointer;
 }
 
 .itens img {
-  width: 50%;
+	width: 50%;
 }
 
 .cadastro {
-  display: flex;
-  flex-direction: column;
+	display: flex;
+	flex-direction: column;
 
-  align-items: center;
+	align-items: center;
 
-  padding-top: 32px;
+	padding-top: 32px;
 
-  color: #efefef;
+	color: #efefef;
 }
 
+/* .login-background {
+	display: none;
+} */
+
 @media (min-width: 375px) {
-  .separacao {
-    width: 77%;
-  }
+	.separacao {
+		width: 77%;
+	}
 }
 
 @media (min-width: 425px) {
-  .separacao {
-    width: 80%;
-  }
+	.separacao {
+		width: 80%;
+	}
 }
 
 @media (min-width: 768px) {
-  .container-main {
-    padding: 16px 96px;
-  }
+	.container-main {
+		padding: 16px 96px;
+	}
 
-  .separacao {
-    width: 87%;
-  }
+	.separacao {
+		width: 87%;
+	}
+}
+
+@media (min-width: 1024px) {
+	.container-body {
+		height: 100%;
+		background: #0f1216;
+	}
+
+	.container-main {
+		display: flex;
+	}
+
+	.login-background {
+		display: block;
+		height: 100%;
+		width: 30%;
+		object-fit: cover;
+	}
 }
