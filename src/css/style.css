@@ -2,6 +2,7 @@
 
 .container-body {
   width: 100%;
+  height: 100%;
   font-family: "Lato", sans-serif;
   background: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95)) center
       center / cover,
@@ -12,8 +13,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
-  height: 100%;
+  height: 100vh;
   padding: 16px;
 }
 
@@ -128,6 +128,15 @@
 
 .container-cadastro p {
   color: #e1e1e1;
+}
+@media (min-width: 640px) {
+  .container-main {
+    padding: 16px 60px;
+  }
+
+  .container-login {
+    width: 90%;
+  }
 }
 
 @media (min-width: 765px) {
