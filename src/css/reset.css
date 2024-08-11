@@ -4,6 +4,25 @@
   box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-corner {
+  background: #00000000;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background-color: #181c23;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: none;
+  background-color: #0f1216;
+}
+
 a {
   text-decoration: none;
   cursor: pointer;
