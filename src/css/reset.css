@@ -1,20 +1,20 @@
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 a {
-	text-decoration: none;
-	cursor: pointer;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 li {
-	list-style: none;
+  list-style: none;
 }
 
 button {
-	border: transparent;
-	outline: none;
-	cursor: pointer;
+  border: transparent;
+  outline: none;
+  cursor: pointer;
 }
