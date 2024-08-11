@@ -2,7 +2,6 @@
 
 .container-body {
   width: 100%;
-  height: calc(100% + 10%);
   font-family: "Lato", sans-serif;
   background: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95)) center
       center / cover,
@@ -11,6 +10,7 @@
 
 .container-main {
   display: flex;
+  height: 100vh;
 
   justify-content: center;
   align-items: center;
