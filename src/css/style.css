@@ -1,176 +1,178 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
 .container-body {
-  width: 100%;
-  height: 130vh;
-
-  font-family: "Lato", sans-serif;
-  background: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95)) center
-      center / cover,
-    url(/src/imgs/login-background.png) no-repeat top / cover;
+	display: flex;
+	width: 100%;
+	min-height: 100vh;
+	font-family: "Lato", sans-serif;
 }
 
 .container-main {
-  display: flex;
-  height: 130vh;
-
-  justify-content: center;
-  align-items: center;
-  padding: 16px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	min-height: 100vh;
+	padding: 16px;
+	background: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95)) center
+			center / cover,
+		url("/src/imgs/login-background.png") center center / cover;
 }
 
 .container-login {
-  width: 100%;
-  margin-top: 40px;
-  height: 100vh;
+	width: 100%;
+}
+
+.logo {
+	margin-bottom: 16px;
 }
 
 .title {
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 400;
-  font-size: 1.5rem;
-  color: #efefef;
-  margin-top: 16px;
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 400;
+	font-size: 1.5rem;
+	color: #efefef;
 }
 
 .separacao {
-  display: flex;
-  height: 1px;
-  background: #383c44;
-  margin: 2.5rem;
+	display: flex;
+	height: 1px;
+	background: #383c44;
+	margin: 40px;
 }
 
 .container-form {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	width: 100%;
 }
 
 .container-form-input {
-  padding: 15px 20px;
-  font-family: "Lato", sans-serif;
-  font-size: 1rem;
-  color: #e1e1e1;
-  background: #181c23;
-  border-radius: 5px;
-  outline: none;
-  border-color: transparent;
+	width: 100%;
+	padding: 15px 20px;
+	font-family: "Lato", sans-serif;
+	font-size: 1rem;
+	color: #e1e1e1;
+	background: #181c23;
+	border-radius: 5px;
+	outline: none;
+	border-color: transparent;
 }
 
 .container-form-ancora {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
 }
 
-.estilo-ancora {
-  font-size: 1rem;
-  color: #a6f750;
+.link {
+	font-size: 1rem;
+	color: #a6f750;
 }
 
 .link:hover {
-  color: #bff981;
-  transition: color 0.1s ease-out;
+	color: #bff981;
+	transition: color 0.1s ease-out;
 }
 
 .btn {
-  font-weight: 400;
-  font-size: 1rem;
-  color: rgb(15, 18, 22);
-  line-height: 3.25rem;
-  background-color: #a6f750;
-  border-radius: 5px;
-  transition: opacity 0.2s ease-in;
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	font-size: 1rem;
+	color: rgb(15, 18, 22);
+	line-height: 52px;
+	background-color: #a6f750;
+	border-radius: 5px;
+	transition: opacity 0.3s;
 }
 
 .btn:hover {
-  opacity: 0.8;
+	opacity: 0.8;
 }
 
 .lista-itens {
-  display: flex;
-  justify-content: center;
-  gap: 32px;
-  width: 100%;
-  margin-bottom: 2.5rem;
+	display: flex;
+	justify-content: center;
+	gap: 32px;
+	width: 100%;
+	margin-bottom: 40px;
 }
 
 .itens {
-  border-radius: 5px;
-  height: 66px;
-  width: 66px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid transparent;
-  background: linear-gradient(to right, rgb(15, 18, 22), rgb(15, 18, 22))
-      padding-box padding-box,
-    linear-gradient(to right, rgb(166, 247, 80), rgb(49, 77, 166)) border-box
-      border-box;
-  cursor: pointer;
+	border-radius: 5px;
+	height: 4.125rem; /* 66px */
+	width: 4.125rem; /* 66px */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid transparent;
+	background: linear-gradient(to right, rgb(15, 18, 22), rgb(15, 18, 22))
+			padding-box padding-box,
+		linear-gradient(to right, rgb(166, 247, 80), rgb(49, 77, 166)) border-box
+			border-box;
+	cursor: pointer;
+	transition: 0.3s ease-in-out;
 }
 
 .itens:hover {
-  background: linear-gradient(to right, rgb(166, 247, 80), rgb(49, 77, 166))
-    border-box border-box;
+	background: linear-gradient(to right, rgb(166, 247, 80), rgb(49, 77, 166))
+		border-box border-box;
+	transition: 0.3s ease-in-out;
 }
 
 .itens a img {
-  width: 32px;
-  height: 32px;
+	width: 2rem; /* 32px */
+	height: 2rem; /* 32px */
 }
 
 .container-cadastro {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .container-cadastro p {
-  color: #e1e1e1;
+	color: #e1e1e1;
 }
 
-@media (max-width: 320px) {
-  .container-login {
-    margin-top: 80px;
-  }
+.container-bg {
+	display: none;
+	visibility: hidden;
 }
 
 @media (min-width: 640px) {
-  .container-main {
-    padding: 16px 60px;
-  }
-
-  .container-login {
-    width: 90%;
-  }
-}
-
-@media (min-width: 765px) {
-  .container-main {
-    padding: 16px 96px;
-  }
+	.container-main {
+		padding: 16px 96px;
+	}
 }
 
 @media (min-width: 1024px) {
-  .container-body {
-    background: url(/src/imgs/login-background.png);
-    object-fit: contain;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
+	.container-main {
+		background-image: none;
+		background-color: #0f1216;
+		width: auto;
+	}
 
-  .container-main {
-    background: #0f1216;
-    width: 52%;
-    padding: 16px 96px;
-  }
-}
+	.container-login {
+		width: 26rem; /* 416px */
+	}
 
-@media (min-width: 1440px) {
-  .container-main {
-    width: 42%;
-  }
+	.container-bg {
+		display: block;
+		visibility: visible;
+		position: relative;
+		flex-grow: 1;
+		background: url(/src/imgs/login-background.png);
+		background-size: cover;
+		background-position: right bottom;
+	}
+
+	.logo-absolute {
+		position: absolute;
+		right: 64px;
+		bottom: 64px;
+	}
 }
